@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='logowanie'></div>
+    <form>
+        <input type="text" name="" id='login' placeholder="login">
+        <input type='text' name="" id='haslo' placeholder="haslo">
+        <button onclick='zaloguj()'>login</button>
+    </form>
+    <script>
+        function zaloguj() {
+            let login = document.getElementById('login').value;
+            let haslo = document.getElementById('haslo').value;
+            window.localStorage.setItem('login', login);
+            window.localStorage.setItem('haslo', haslo);
+        }
+
+    </script>
+</body>
+
+</html>
+
+<!--<input type='password' name='' placeholder="haslo" id='haslo'>-->
